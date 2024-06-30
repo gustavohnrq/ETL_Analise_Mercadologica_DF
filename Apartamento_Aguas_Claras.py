@@ -165,8 +165,10 @@ credentials_json = '/Users/macbook/Documents/Cod_ETL_estudos/credentiasl_machome
 spreadsheet_id = '1oyKvXEcOe5jJITxH4EHe4xOmVp-uT_5XIRvuXQe-Esw'
 range_name = 'Apartamento_Aguas_Claras!A1'
 
-df = pd.read_csv(input_file, sep=",", thousands=".", decimal=",")
+df = pd.read_csv(input_file, sep=",", thousands=".", decimal=",", low_memory=False)
 df['Data'] = pd.to_datetime(df['Data'], format='%Y-%m-%d')
+df['quartos'] = pd.to_numeric(df['quartos'], errors='coerce').fillna(0).astype(int)  # Conversão para numérico (inteiros)
+
 
 resultados_por_data = []
 

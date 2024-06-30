@@ -57,7 +57,7 @@ def analisar_imovel_detalhado(df, oferta, tipo_imovel=None, bairro=None, cidade=
 
     for vaga_status, df_vaga in df.groupby(df["vagas"].notnull()):
         vaga_status_str = "Com Vaga" if vaga_status else "Sem Vaga"
-        
+
         filtro = (df_vaga["oferta"] == oferta)
         if tipo_imovel:
             filtro &= (df_vaga["tipo"] == tipo_imovel)
