@@ -22,7 +22,9 @@ if __name__ == "__main__":
         '/Users/macbook/Documents/Cod_ETL_estudos/Casa_Lago_Sul.py',
         '/Users/macbook/Documents/Cod_ETL_estudos/Casa_Park_Way.py',
         '/Users/macbook/Documents/Cod_ETL_estudos/Casa_Sobradinho(Alto da boa vista).py',
-        '/Users/macbook/Documents/Cod_ETL_estudos/Casa_Vicente_Pires.py'
+        '/Users/macbook/Documents/Cod_ETL_estudos/Casa_Vicente_Pires.py',
+        '/Users/macbook/Documents/Cod_ETL_estudos/Casa_Sobradinho.py',
+        '/Users/macbook/Documents/Cod_ETL_estudos/Casa_Asa_Sul.py'
     ]
 
     for script in scripts_to_run:
