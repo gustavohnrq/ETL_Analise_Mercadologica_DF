@@ -32,9 +32,9 @@ def selecionar_clusters(df_filtrado, valor_coluna, cluster_means, ordered_cluste
         reformado_cluster = ordered_clusters[-1]
 
     return {
-        original_cluster: 'Original',
-        semi_reformado_cluster: 'Semi-Reformado',
-        reformado_cluster: 'Reformado'
+        original_cluster: '01 - Original',
+        semi_reformado_cluster: '02 - Semi-Reformado',
+        reformado_cluster: '03 - Reformado'
     }
 
 def grupos_metragem_quartos(df, tipo_imovel):
